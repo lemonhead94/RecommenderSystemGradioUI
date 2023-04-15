@@ -19,4 +19,4 @@ RUN pip install --upgrade pip setuptools wheel && \
 
 EXPOSE 7860
 
-ENTRYPOINT ["python", "./recommender_ui/app.py"]
+CMD ["python", "/app/recommender_ui/app.py"]
