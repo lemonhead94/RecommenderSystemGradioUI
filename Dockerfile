@@ -1,5 +1,10 @@
 FROM python:3.9.16-alpine3.17
 
+# Install system deps
+RUN apk add --no-cache \
+    bash git gcc musl-dev libxml2-dev libxslt-dev libffi-dev linux-headers g++ && \
+    mkdir /app
+
 WORKDIR /app
 
 COPY ./recommender_ui ./recommender_ui
