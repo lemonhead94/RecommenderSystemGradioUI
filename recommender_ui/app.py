@@ -84,5 +84,5 @@ with gr.Blocks(
 
 recommender_ui.launch(
     favicon_path="./recommender_ui/favicon.ico",
-    inbrowser=True,
+    server_name="0.0.0.0",
 )

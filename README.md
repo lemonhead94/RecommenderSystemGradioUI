@@ -1,6 +1,8 @@
 # Recommender System Gradio Interface
 
-## Installation
+## Local
+
+### Installation
 
 ```bash
 conda create -n py39 python=3.9
@@ -10,8 +12,22 @@ poetry install
 pre-commit install
 ```
 
-# Launching the App
+### Launching the App
 
 ```bash
 python recommender_ui/app.py
+```
+
+## Container Image
+
+### Docker Build
+
+```bash
+docker build -t recommender_ui .
+```
+
+### Docker Run
+
+```bash
+docker run -it -p 7860:7860 recommender_ui
 ```

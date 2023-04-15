@@ -8,7 +8,7 @@ readme = "README.md"
 packages = [{include = "rec_sys"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.11"
 gradio = "^3.26.0"
 
 [tool.poetry.dev-dependencies]
