@@ -13,5 +13,5 @@ pre-commit install
 # Launching the App
 
 ```bash
-python ./ui.py
+python recommender_ui/app.py
 ```
